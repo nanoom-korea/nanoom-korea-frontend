@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import Head from "next/head";
 
 import Header from "common/layout/header";
+import Navigation from "common/layout/navigation";
 
 type LayoutProps = {
   title: string;
@@ -15,6 +16,7 @@ const Layout = (props: LayoutProps) => {
         <title>{props.title}</title>
       </Head>
       <Header />
+      <Navigation />
       {props.children}
     </>
   );
