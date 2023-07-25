@@ -1,11 +1,18 @@
 import React from "react";
 
 import Layout from "common/layout";
+import Banner from "pages/home/banner";
+import HomeBody from "pages/home/body";
 
-export default function Home() {
+const Home = () => {
   return (
     <Layout title="나눔코리아">
-      <div className="text-3xl">font 적용 후 확인 용도</div>
+      <div className="flex flex-col gap-[60px]">
+        <Banner />
+        <HomeBody />
+      </div>
     </Layout>
   );
-}
+};
+
+export default Home;
