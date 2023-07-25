@@ -3,6 +3,8 @@ import Head from "next/head";
 
 import Header from "common/layout/header";
 import Navigation from "common/layout/navigation";
+import BottomNavigation from "common/layout/bottomNavigation";
+import Footer from "common/layout/footer";
 
 type LayoutProps = {
   title: string;
@@ -15,9 +17,13 @@ const Layout = (props: LayoutProps) => {
       <Head>
         <title>{props.title}</title>
       </Head>
-      <Header />
-      <Navigation />
-      {props.children}
+      <div className="min-w-[1280px]">
+        <Header />
+        <Navigation />
+        {props.children}
+        <BottomNavigation />
+        <Footer />
+      </div>
     </>
   );
 };
