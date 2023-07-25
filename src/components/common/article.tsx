@@ -8,7 +8,7 @@ type ButtonType = {
 };
 
 export type ExportArticleType = {
-  children: ReactNode;
+  topChildren: ReactNode;
   buttons: {
     first: ButtonType;
     second: ButtonType;
@@ -18,7 +18,7 @@ export type ExportArticleType = {
 const ExportArticle = (props: ExportArticleType) => {
   return (
     <div className="w-full">
-      <div>{props.children}</div>
+      <div>{props.topChildren}</div>
       <div className="grid h-[45px] grid-cols-2">
         <button
           className={`flex items-center justify-between px-[20px] text-[14px] font-medium ${props.buttons.first.style}`}

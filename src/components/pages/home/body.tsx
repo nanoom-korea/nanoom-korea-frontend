@@ -11,14 +11,18 @@ const HomeBody = () => {
     <div className="grid w-full max-w-7xl grid-cols-3 gap-[20px] place-self-center">
       <div className="flex flex-col gap-[30px]">
         {/* TODO: route 수정 및 들어갈 콘텐츠 연결 */}
-        <SectionWithTitle title="새로운 소식" route="/" children={<div>소식소식</div>} />
+        <SectionWithTitle title="새로운 소식" route="/">
+          <div>소식소식</div>
+        </SectionWithTitle>
         <Contact />
       </div>
       {/* TODO: route 수정 및 들어갈 콘텐츠 연결 */}
-      <SectionWithTitle title="페이스북 최신글" route="/" children={<div>페북페북</div>} />
+      <SectionWithTitle title="페이스북 최신글" route="/">
+        <div>페북페북</div>
+      </SectionWithTitle>
       <div className="flex flex-col gap-[20px]">
         <ExportArticle
-          children={<HappyBean />}
+          topChildren={<HappyBean />}
           buttons={{
             first: {
               name: "콩 기부하러 가기",
@@ -33,7 +37,7 @@ const HomeBody = () => {
           }}
         />
         <ExportArticle
-          children={<Vms />}
+          topChildren={<Vms />}
           buttons={{
             first: {
               name: "VMS 등록 안내",
