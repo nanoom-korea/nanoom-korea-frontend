@@ -5,6 +5,7 @@ type PagePropsType = {
   title: string;
   path: string[];
   children: ReactNode;
+  className?: string;
 };
 
 const Page = (props: PagePropsType) => {
@@ -23,7 +24,7 @@ const Page = (props: PagePropsType) => {
           </div>
         </div>
         <hr className="mb-[30px] mt-[15px] border-[#dddddd]" />
-        <div className="h-full w-full">{props.children}</div>
+        <div className={`h-full w-full ${props.className}`}>{props.children}</div>
       </div>
     </div>
   );

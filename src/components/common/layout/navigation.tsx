@@ -6,9 +6,9 @@ const Navigation = () => {
   const navList = [
     { route: "/info/greeting", title: "나눔코리아 소개" },
     { route: "", title: "봉사활동 프로그램" },
-    { route: "", title: "봉사 참여하기" },
-    { route: "", title: "후원하기" },
-    { route: "", title: "게시판" },
+    { route: "/volunteer/register", title: "봉사 참여하기" },
+    { route: "/support/regular", title: "후원하기" },
+    { route: "/board/qna", title: "게시판" },
     { route: "", title: "나눔코리아 파트너" },
   ];
 
