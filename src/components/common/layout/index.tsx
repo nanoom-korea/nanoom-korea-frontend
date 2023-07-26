@@ -20,7 +20,7 @@ const Layout = (props: LayoutProps) => {
       <div className="min-w-[1280px]">
         <Header />
         <Navigation />
-        {props.children}
+        <main className="min-h-screen">{props.children}</main>
         <BottomNavigation />
         <Footer />
       </div>
