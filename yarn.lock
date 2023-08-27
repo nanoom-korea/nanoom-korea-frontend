@@ -285,10 +285,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.15.11":
-  version: 18.15.11
-  resolution: "@types/node@npm:18.15.11"
-  checksum: 977b4ad04708897ff0eb049ecf82246d210939c82461922d20f7d2dcfd81bbc661582ba3af28869210f7e8b1934529dcd46bff7d448551400f9d48b9d3bddec3
+"@types/node@npm:20.5.6":
+  version: 20.5.6
+  resolution: "@types/node@npm:20.5.6"
+  checksum: d2ce44f1cfa3fd00fe7426f7cf9a46d680cd57802b874ed5618e7d9101a9c6b8de37f08c0e7185ee06fb363ad492549c3ea69665c7e8e31c7813210ed8e89005
   languageName: node
   linkType: hard
 
@@ -2424,7 +2424,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nanoom-korea-frontend@workspace:."
   dependencies:
-    "@types/node": 18.15.11
+    "@types/node": 20.5.6
     "@types/react": 18.2.14
     "@types/react-dom": 18.0.11
     "@types/uuid": ^9.0.2
